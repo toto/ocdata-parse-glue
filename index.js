@@ -33,7 +33,7 @@ function updateEventSessionFromOcData(eventSession, json) {
   if (json.end) {
     const date = moment(json.end, moment.ISO_8601);
     if (moment.isMoment(date) && date.isValid()) {
-    res = eventSession.set('end', date.toDate());
+      res = eventSession.set('end', date.toDate());
     } else {
       console.error('Invalid Date ->', json.end, 'sessionid', json.id);
       res = eventSession.set('end', null);
