@@ -9,7 +9,7 @@
   "dependencies": {
     "dotenv": "^6.1.0",
     "moment": "^2.22.1",
-    "parse": "^1.11.1",
+    "parse": "^2.10.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   },
