@@ -78,7 +78,7 @@ async function createUpdateSessions() {
   query.equalTo('eventId', EVENT_ID);
   query.containedIn('sessionId', sessionIds);
   query.limit(10000);
-  const existingSessions = await query.find();
+  const existingSessions = await query.find({ useMasterKey: true });
   console.info('found', existingSessions.length, 'existing sessions');
   const objectsToUpdate = existingSessions.map((session) => {
     const ocsession = sessionsById[session.get('sessionId')];
