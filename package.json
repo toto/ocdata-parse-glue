@@ -9,13 +9,14 @@
   "dependencies": {
     "dotenv": "^6.1.0",
     "moment": "^2.22.1",
-    "parse": "^2.10.0",
+    "parse": "^3.2.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb-base": "^13.1.0",
+    "@types/parse": "^2.18.13",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.14.0"
   }
 }
